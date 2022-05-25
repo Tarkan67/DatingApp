@@ -12,6 +12,13 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { MemberListComponent } from './members/member-list/member-list.component';
+import { MemberDetailComponent } from './members/member-detail/member-detail.component';
+import { MessagesComponent } from './messages/messages.component';
+import { ListsComponent } from './lists/lists.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ToastrModule } from 'ngx-toastr';
+import { SharedModule } from './_modules/shared.module';
 
 
 @NgModule({
@@ -19,7 +26,11 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     AppComponent,
     NavComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    MemberListComponent,
+    MemberDetailComponent,
+    MessagesComponent,
+    ListsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +40,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     FormsModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
